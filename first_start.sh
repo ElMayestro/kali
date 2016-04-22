@@ -34,6 +34,7 @@ chmod o+x /usr/sbin/add-apt-repository
 chown root:root /usr/sbin/add-apt-repository
 /usr/sbin/add-apt-repository ppa:webupd8team/brackets
 apt-get update
+apt-get install brackets -y
 cd /home/g/Pictures/
 mkdir Wallpapers
 wget https://github.com/ElMayestro/kali/blob/master/wallpaper.jpeg
