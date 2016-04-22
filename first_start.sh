@@ -47,3 +47,8 @@ cd /home/g/Pictures/
 mkdir Wallpapers
 wget https://github.com/ElMayestro/kali/blob/master/wallpaper.jpeg
 gsettings set org.gnome.desktop.background picture-uri file:///home/g/Pictures/wallpaper.jpeg
+cd /home/g/Downloads
+wget https://github.com/ElMayestro/kali/blob/master/iris_light_gtk-theme.tar.gz
+tar -xvf iris_light_gtk-theme.tar.gz
+mv Iris\ Light/ /usr/share/themes
+gsettings set org.gnome.desktop.interface gtk-theme "Iris Light"
