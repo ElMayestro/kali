@@ -34,3 +34,5 @@ chmod o+x /usr/sbin/add-apt-repository
 chown root:root /usr/sbin/add-apt-repository
 /usr/sbin/add-apt-repository ppa:webupd8team/brackets
 apt-get update
+cd /home/g/Pictures/
+wget https://images.unsplash.com/photo-1428535172630-fb1c050ac3e0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b12d8c2cf10fba49dbefbb5dc66c068c
