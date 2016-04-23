@@ -54,3 +54,8 @@ cd /home/g/Pictures/
 mkdir Wallpapers
 wget https://github.com/ElMayestro/kali/blob/master/wallpaper.jpeg
 gsettings set org.gnome.desktop.background picture-uri file:///home/g/Pictures/wallpaper.jpeg
+##PROGRAMS
+apt-get install inkscape -y
+apt-get install gimp -y
+apt-get install netbeans -y
+apt-get install geary -y
