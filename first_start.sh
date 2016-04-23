@@ -35,6 +35,9 @@ chown root:root /usr/sbin/add-apt-repository
 cd /home/g/Downloads
 wget https://mirrors.ocf.berkeley.edu/tanglu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.4-3_amd64.deb
 dpkg -i libgcrypt11_1.5.4-3_amd64.deb
+#LIBSSL 1.0.0 Library
+wget https://github.com/ElMayestro/kali/blob/master/libssl1.0.0_1.0.1k-3%2Bdeb8u4_amd64.deb
+dpkg -i libssl1.0.0_1.0.1k-3%2Bdeb8u4_amd64.deb
 # 1. Add the Spotify repository signing key to be able to verify downloaded packages
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 # 2. Add the Spotify repository
