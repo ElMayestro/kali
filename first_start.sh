@@ -32,9 +32,9 @@ else
 fi' >> add-apt-repository
 chmod o+x /usr/sbin/add-apt-repository 
 chown root:root /usr/sbin/add-apt-repository
-/usr/sbin/add-apt-repository ppa:webupd8team/brackets
-apt-get update
-apt-get install brackets -y
+cd /home/g/Downloads
+wget https://mirrors.ocf.berkeley.edu/tanglu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.4-3_amd64.deb
+dpkg -i libgcrypt11_1.5.4-3_amd64.deb
 # 1. Add the Spotify repository signing key to be able to verify downloaded packages
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 # 2. Add the Spotify repository
@@ -43,12 +43,11 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update
 # 4. Install Spotify
 sudo apt-get install spotify-client
+#BRACKETS
+cd /home/g/Downloads
+wget https://github.com/adobe/brackets/releases/download/release-1.6%2Beb4/Brackets.1.6.Extract.64-bit.deb
+dpkg -i Brackets.1.6.Extract.64-bit.deb
 cd /home/g/Pictures/
 mkdir Wallpapers
 wget https://github.com/ElMayestro/kali/blob/master/wallpaper.jpeg
 gsettings set org.gnome.desktop.background picture-uri file:///home/g/Pictures/wallpaper.jpeg
-cd /home/g/Downloads
-wget https://github.com/ElMayestro/kali/blob/master/iris_light_gtk-theme.tar.gz
-tar -xvf iris_light_gtk-theme.tar.gz
-mv Iris\ Light/ /usr/share/themes
-gsettings set org.gnome.desktop.interface gtk-theme "Iris Light"
